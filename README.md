@@ -50,7 +50,9 @@ All the testing is done against below JSON Model hard-coded in code:
 
 ## Example Request 1 (For null, blank or wrong user input)
 
-	curl --location 'http://localhost:8080/jsonManipulation/api/v1/manipulate?inputStr='
+```bash
+curl --location 'http://localhost:8080/jsonManipulation/api/v1/manipulate?inputStr='
+```
 
 ## Example Response
 ```
@@ -62,7 +64,9 @@ Example inputs:
 
 ## Example Request 2 (For single input)
 
-	curl --location 'http://localhost:8080/jsonManipulation/api/v1/manipulate?inputStr=%22New%3A%3A%3ANewDocument%22'
+```bash
+curl --location 'http://localhost:8080/jsonManipulation/api/v1/manipulate?inputStr=%22New%3A%3A%3ANewDocument%22'
+```
 
 ## Example Response
 ```json
@@ -92,7 +96,9 @@ Example inputs:
 
 ## Example Request 3 (For comma separated multiple inputs)
 
-	curl --location 'http://localhost:8080/jsonManipulation/api/v1/manipulate?inputStr=%22New%3A%3A%3ANewDocument%22%2C%22Open%3A%3A%3AOpenDocument%22'
+```bash
+curl --location 'http://localhost:8080/jsonManipulation/api/v1/manipulate?inputStr=%22New%3A%3A%3ANewDocument%22%2C%22Open%3A%3A%3AOpenDocument%22'
+```
 
 ## Example Response
 ```json
